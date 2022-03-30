@@ -1,0 +1,11 @@
+<Key name="data">
+<Value int="1"/>
+<Key name="win rate">
+<Value int="2"/>
+<Key name="battle count">
+<Value int="3"/>
+<Key name="handle">
+<Value int="4"/>
+<Key name="nickname">
+<Value int="5"/>
+

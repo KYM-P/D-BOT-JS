@@ -1,0 +1,23 @@
+{
+    "name" : "drbot",
+    "version": "1.0.0",
+    "description": "",
+    "main": "bot.js",
+    "scripts": {
+        "build": "pkg . --iut-path bin --targets node16-win-x64"
+
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "fs": "^0.0.1-security",
+        "got": "^11.8.2",
+        "jquery": "^3.6.0",
+        "jsdom": "^17.0.0",
+        "pkg": "^5.3.2",
+        "xmlhttprequest": "^1.8.0"
+    },
+    "bin" :{
+        "app": "./bot.js"
+    }
+}

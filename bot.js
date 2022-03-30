@@ -81,9 +81,10 @@ client.on('messageCreate', msg => {
     }
 
     if (msg.content == "- rank"){
-        if(msg.attachments.first()){//checks if an attachment is sent
-            if(msg.attachments.first().name == "save.SC2Bank"){
-                download(msg.attachments.first().url);//Function I will show later
+        if(msg.attachments.first()){//checks if an attachment is sent (첨부파일이 있는지 확인)
+            if(msg.attachments.first().name == "save.SC2Bank"){// attachment file's name = save.SC2Bank (파일 이름이 save.SC2Bank일 때) 
+                download(msg.attachments.first().url);//download attachment file (첨부파일 다운로드)
+                msg.reply("```cs\n ! 정상적으로 다운로드 되었습니다. ```");
             }
             else{
                 msg.reply("```cs\n# error : save.SC2Bank 파일이 아닙니다.\nsave.SC2Bank 파일을 첨부하시면서 댓글달기에 - rank 를 같이 적어 주세요.```");
